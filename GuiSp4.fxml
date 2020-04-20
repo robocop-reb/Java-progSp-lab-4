@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TableView fx:id="sqlTable" layoutX="107.0" layoutY="85.0" prefHeight="315.0" prefWidth="479.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="140.0" text="id" />
+            <TableColumn fx:id="type" prefWidth="338.0" text="type" />
+        </columns>
+      </TableView>
+      <TextField fx:id="idField" layoutX="107.0" layoutY="54.0" prefHeight="25.0" prefWidth="118.0" />
+      <TextField fx:id="typeField" layoutX="247.0" layoutY="54.0" prefHeight="25.0" prefWidth="337.0" />
+      <Button fx:id="select" layoutX="14.0" layoutY="85.0" mnemonicParsing="false" onAction="#handleSelectButtonClick" text="Select" />
+      <Button fx:id="insert" layoutX="14.0" layoutY="120.0" mnemonicParsing="false" onAction="#handleInsertButtonClick" prefHeight="25.0" prefWidth="47.0" text="Insert" />
+      <Button fx:id="delete" layoutX="14.0" layoutY="154.0" mnemonicParsing="false" onAction="#handleDeleteButtonClick" text="Delete" />
+      <Button fx:id="connect" layoutX="24.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleConnectButtonClick" text="Connect" />
+      <Button fx:id="disconnect" layoutX="107.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleDisconnectButtonClick" text="Disconnect" />
+   </children>
+</Pane>
